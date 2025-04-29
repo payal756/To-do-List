@@ -1,0 +1,144 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the To-Do List */
+  .todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Filters section */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Input section */
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-section select,
+  .input-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .input-section button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .input-section button:hover {
+    background-color: #218838;
+  }
+  
+  /* Task list */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+  }
+  
+  /* Task delete button */
+  button {
+    padding: 5px 10px;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Priority colors */
+  li[data-priority="High"] {
+    border-left: 5px solid #ff5c5c; /* Red for high priority */
+  }
+  
+  li[data-priority="Medium"] {
+    border-left: 5px solid #ffcc00; /* Yellow for medium priority */
+  }
+  
+  li[data-priority="Low"] {
+    border-left: 5px solid #28a745; /* Green for low priority */
+  }
+  
+  /* Task list footer */
+  footer {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+  }
+  /* static/style.css */
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Section -->
+<div id="auth-section">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- Task Section (hidden by default, shown after login) -->
+<div id="task-section" style="display:none;">
+  <div class="input-section">
+    <input type="text" id="new-task-title" placeholder="Title">
+    <input type="text" id="new-task-desc" placeholder="Description">
+    <button onclick="createTask()">Add Task</button>
+  </div>
+  <div id="tasks"></div>
+</div>
+
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+
+    <!-- Filters Section -->
+    <div class="filters">
+      <select id="filter-category">
+        <option value="">All Categories</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <select id="filter-priority">
+        <option value="">All Priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+
+    <!-- Task Input Section -->
+    <div class="input-section">
+      <select id="category-select">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <select id="priority-select">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
