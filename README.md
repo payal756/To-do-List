@@ -1,6 +1,6 @@
 # 📝 To-Do List API
 
-A full-stack To-Do List application backend built with **Spring Boot**, using **JWT authentication**, **MySQL**, and **RESTful API design**.
+A full-stack To-Do List application backend built with **Spring Boot**, using **JWT authentication**, **MySQL**.
 
 ## 🚀 Features
 
